@@ -13,7 +13,7 @@ for file in filelist:#scanning the folder
   if file not in keys:#allows us to add new files to the database by caching
    print("Loading file: ", file")
    chat_bot.add("pdf_file", f"docs/{file}")
-   db[file]=f"docs/{file}"
+   db[file]=None
 
   else:
     print("File already loaded: ", file)
